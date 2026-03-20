@@ -68,3 +68,44 @@ This helps industries reduce downtime, improve efficiency, and optimize maintena
 ---
 
 ## 🚀 Project Workflow
+Data → Feature Engineering → Model Training → API → UI → Prediction
+
+
+---
+
+## 🌐 API (FastAPI)
+
+### ▶️ Run API
+
+
+### 📥 Sample Input
+```json
+{
+  "temperature": 330,
+  "vibration": 80,
+  "pressure": 150,
+  "temp_roll_mean": 320,
+  "vib_roll_std": 12,
+  "temp_lag1": 325,
+  "vib_lag1": 75
+}
+
+📤 Sample Output
+{
+  "prediction": 1,
+  "failure_probability": 0.72
+}
+
+💻 UI (Streamlit Dashboard)
+▶️ Run UI
+streamlit run app.py
+
+Features:
+
+Interactive sliders for input
+
+Real-time prediction
+
+Visual dashboard (charts & indicators)
+
+Status alerts (Safe / Failure)
